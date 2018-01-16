@@ -12,14 +12,15 @@
 var name = 'Tyler';
 // Do not edit the code above.
 
-/*
-  Create a function called isTyler that accepts name as it's only parameter.
-  If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
-*/
-
-//Code Here
-
-
+function isTyler(name) {
+  if (name == "Tyler") {
+    return true;
+  } else {
+      if (name !== "Tyler") {
+        return false;
+      }
+  }
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -29,7 +30,9 @@ var name = 'Tyler';
 
 //Code Here
 
-
+function getName() {
+  return prompt("What's your name?");
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -42,6 +45,9 @@ var name = 'Tyler';
 
 //Code Here
 
+function welcome() {
+  return alert("Welcome, " + getName());
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -71,7 +77,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+  function myName() {
+    return "Nick";
+  }
 
 
 /*
@@ -79,7 +87,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function newMyName() {
+  myName();
+}
 
 
 /*
@@ -87,7 +97,7 @@ var name = 'Tyler';
 */
 
 // Code Here
-
+alert(newMyName());
 
 
 ////////// PROBLEM 7 //////////
@@ -97,7 +107,11 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function outerFn() {
+  return function() {
+    return "Nick";
+  } 
+}
 
 
 /*
@@ -105,7 +119,7 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+var innerFn = outerFn();
 
 
 /* 
@@ -113,3 +127,5 @@ var name = 'Tyler';
 */
 
 // Code Here
+
+innerFn();
